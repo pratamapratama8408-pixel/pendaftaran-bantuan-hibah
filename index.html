@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bantuan Hibah - Rizky Pratama Dion</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+ font-family:Arial,sans-serif;
+ background:#f4f6fa;color:#263248;
+ line-height:1.6
+}
+header{
+ background:#10264a;color:white;
+ padding:28px 18px;text-align:center;
+ border-bottom:4px solid #d8b568
+}
+header h1{font-size:25px;color:#e8c77f}
+header p{font-size:13px;margin-top:8px}
+nav{
+ background:#0b1c36;padding:12px;
+ text-align:center
+}
+nav a{
+ color:white;text-decoration:none;
+ margin:0 10px;font-size:13px
+}
+.hero{
+ padding:55px 20px;text-align:center;
+ background:linear-gradient(140deg,#10264a,#234b79);
+ color:white
+}
+.hero h2{font-size:29px;margin-bottom:15px}
+.hero p{max-width:550px;margin:auto}
+.gold{color:#e8c77f}
+.container{
+ max-width:850px;margin:auto;padding:25px 16px
+}
+.section-title{
+ text-align:center;color:#10264a;
+ margin:15px 0 22px
+}
+.cards{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:14px
+}
+.card{
+ background:white;padding:20px;
+ border-radius:12px;
+ border:1px solid #e1e6ee;
+ box-shadow:0 4px 14px #00000009
+}
+.card h3{color:#17385f;margin-bottom:8px}
+.card p{font-size:14px}
+.notice{
+ background:#fff8e8;border-left:4px solid #c59b4e;
+ padding:16px;margin:20px 0;
+ font-size:14px
+}
+form{
+ background:white;padding:22px;
+ border-radius:12px;
+ box-shadow:0 4px 18px #0000000c
+}
+label{display:block;font-weight:bold;margin:13px 0 6px}
+input,select,textarea{
+ width:100%;padding:13px;
+ border:1px solid #ccd4df;
+ border-radius:7px;font-size:15px
+}
+textarea{min-height:100px;resize:vertical}
+button{
+ background:#bd944c;color:white;
+ border:0;padding:14px;
+ border-radius:7px;font-size:15px;
+ font-weight:bold;width:100%;
+ margin-top:18px;cursor:pointer
+}
+button:hover{background:#987234}
+.small{font-size:12px;color:#697386;margin-top:12px}
+.about{
+ background:white;padding:22px;
+ border-radius:12px;margin-top:20px
+}
+footer{
+ background:#10264a;color:white;
+ padding:28px 18px;text-align:center;
+ font-size:13px;margin-top:30px
+}
+@media(max-width:550px){
+ .cards{grid-template-columns:1fr}
+ .hero h2{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <h1>BANTUAN HIBAH</h1>
+ <p>RIZKY PRATAMA DION</p>
+ <p>Informasi dan pengajuan bantuan ekonomi</p>
+</header>
+
+<nav>
+ <a href="#beranda">Beranda</a>
+ <a href="#program">Program</a>
+ <a href="#pengajuan">Pengajuan</a>
+ <a href="#tentang">Tentang</a>
+</nav>
+
+<section class="hero" id="beranda">
+ <h2>Membangun Harapan,<br>
+ <span class="gold">Membuka Kesempatan</span></h2>
+ <p>
+ Informasi pengajuan bantuan bagi masyarakat
+ yang membutuhkan dukungan untuk memulai usaha
+ atau menghadapi kesulitan ekonomi.
+ </p>
+</section>
+
+<main class="container">
+
+<h2 class="section-title" id="program">
+ Bidang Bantuan
+</h2>
+
+<div class="cards">
+ <div class="card">
+  <h3>💼 Bantuan Modal Usaha</h3>
+  <p>
+   Informasi pengajuan dukungan modal bagi
+   masyarakat yang ingin memulai atau
+   mengembangkan usaha kecil.
+  </p>
+ </div>
+
+ <div class="card">
+  <h3>🤝 Bantuan Kesulitan Ekonomi</h3>
+  <p>
+   Pengajuan untuk masyarakat yang sedang
+   menghadapi kesulitan keuangan dan
+   membutuhkan dukungan ekonomi.
+  </p>
+ </div>
+
+ <div class="card">
+  <h3>🏪 Usaha Kecil</h3>
+  <p>
+   Dukungan bagi pelaku usaha kecil yang
+   membutuhkan bantuan untuk mengembangkan
+   kegiatan ekonominya.
+  </p>
+ </div>
+
+ <div class="card">
+  <h3>❤️ Bantuan Kemanusiaan</h3>
+  <p>
+   Penyampaian informasi kebutuhan bantuan
+   mendesak untuk ditinjau sesuai kemampuan
+   dan ketersediaan sumber dana.
+  </p>
+ </div>
+</div>
+
+<div class="notice">
+ <strong>Informasi penting:</strong><br>
+ Pengajuan tidak menjamin bantuan akan diberikan.
+ Setiap permohonan perlu ditinjau terlebih dahulu.
+ Tidak ada biaya pendaftaran atau biaya pencairan
+ yang boleh diminta melalui situs ini.
+</div>
+
+<h2 class="section-title" id="pengajuan">
+ Formulir Minat Pengajuan Bantuan
+</h2>
+
+<form id="formBantuan">
+ <label>Nama lengkap</label>
+ <input id="nama" required placeholder="Masukkan nama lengkap">
+
+ <label>Domisili</label>
+ <input id="domisili" required placeholder="Kota / Kabupaten">
+
+ <label>Jenis kebutuhan</label>
+ <select id="jenis" required>
+  <option value="">Pilih kebutuhan</option>
+  <option>Modal usaha</option>
+  <option>Kesulitan membayar utang</option>
+  <option>Pengembangan usaha kecil</option>
+  <option>Kebutuhan ekonomi mendesak</option>
+ </select>
+
+ <label>Perkiraan kebutuhan dana</label>
+ <select id="jumlah" required>
+  <option value="">Pilih perkiraan</option>
+  <option>SGD20.000 - SGD50.000</option>
+  <option>SGD50.000 - SGD100.000</option>
+ </select>
+
+ <label>Ceritakan kebutuhan Anda</label>
+ <textarea id="cerita" required
+ placeholder="Jelaskan kondisi dan tujuan pengajuan Anda..."></textarea>
+
+ <label style="font-weight:normal">
+  <input type="checkbox" id="setuju"
+  required style="width:auto">
+  Saya setuju data ini dikirim untuk ditinjau
+  dan memahami bahwa pengajuan bukan jaminan bantuan.
+ </label>
+
+ <button type="submit">KIRIM PENGAJUAN VIA WHATSAPP</button>
+
+ <p class="small">
+  Jangan kirim PIN, OTP, kata sandi, nomor kartu
+  bank, atau dokumen identitas sensitif melalui
+  formulir ini.
+ </p>
+</form>
+
+<section class="about" id="tentang">
+ <h2>Tentang Program</h2>
+ <p>
+ Halaman ini merupakan sarana informasi dan
+ penyampaian minat pengajuan bantuan yang
+ menggunakan nama Rizky Pratama Dion.
+ </p>
+ <p>
+ Program ini tidak mengatasnamakan pemerintah
+ atau lembaga resmi. Ketersediaan dana,
+ sumber pendanaan, dan kelayakan bantuan
+ harus dikonfirmasi secara terbuka sebelum
+ bantuan dapat diberikan.
+ </p>
+</section>
+
+</main>
+
+<footer>
+ <h3>RIZKY PRATAMA DION</h3>
+ <p>Informasi Bantuan dan Kepedulian Sosial</p>
+ <p>© 2026 - Semua Hak Dilindungi</p>
+ <p>Pengajuan gratis. Tidak ada jaminan pencairan.</p>
+</footer>
+
+<script>
+document.getElementById("formBantuan")
+.addEventListener("submit",function(e){
+ e.preventDefault();
+
+ const nomor="601165793687";
+
+ const nama=document.getElementById("nama").value;
+ const domisili=document.getElementById("domisili").value;
+ const jenis=document.getElementById("jenis").value;
+ const jumlah=document.getElementById("jumlah").value;
+ const cerita=document.getElementById("cerita").value;
+
+ if(!document.getElementById("setuju").checked){
+  alert("Silakan setujui ketentuan terlebih dahulu.");
+  return;
+ }
+
+ const pesan=
+ "PENGAJUAN INFORMASI BANTUAN\n\n"+
+ "Nama: "+nama+"\n"+
+ "Domisili: "+domisili+"\n"+
+ "Kebutuhan: "+jenis+"\n"+
+ "Perkiraan dana: "+jumlah+"\n"+
+ "Keterangan: "+cerita+"\n\n"+
+ "Saya memahami bahwa pengajuan bukan jaminan bantuan.";
+
+ if(nomor.includes("X")){
+  alert("Admin belum mengatur nomor WhatsApp.");
+  return;
+ }
+
+ window.open(
+  "https://wa.me/"+601165793687+"?text="+encodeURIComponent(pesan),
+  "_blank"
+ );
+});
+</script>
+
+</body>
+</html>
